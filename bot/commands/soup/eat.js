@@ -17,6 +17,8 @@ module.exports = {
             let soups = soupsJson.soups
             let soupEmoji = await Client.emojis.resolve(soupsJson.soup)
 
+            if(user.soups.length < 1) return message.channel.send(`❌${soupEmoji.toString()}`)
+
             let soupID = user.soups.length * Math.random() << 0
             let soup = user.soups[soupID]
             user.soups.splice(soupID,1)
