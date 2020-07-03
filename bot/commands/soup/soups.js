@@ -3,7 +3,7 @@ const utils = require("../../utils");
 module.exports = {
     name: 'list',
     aliases: ['collection','soups'],
-    description: 'list\nlists your collected soups',
+    description: 'list | lists your collected soups',
     catagory: "Soup",
     hidden: false,
     owner: false,

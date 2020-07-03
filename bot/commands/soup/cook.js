@@ -4,7 +4,7 @@ const utils = require('../../utils')
 module.exports = {
     name: 'get',
     aliases: ['cook','collect','make','soup'],
-    description: 'get\nMakes a soup (once every 4 hours)',
+    description: 'get | Makes a soup',
     catagory: "Misc",
     hidden: false,
     owner: false,
