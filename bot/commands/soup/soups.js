@@ -9,7 +9,7 @@ module.exports = {
     owner: false,
     guild: false,
     userPerms: [],
-    runPerms: [],
+    runPerms: ["USE_EXTERNAL_EMOJIS"],
 	async execute(message, data) {
         try{
             let user = await utils.getUserDoc(message.author.id)
