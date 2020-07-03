@@ -1,0 +1,5 @@
+{
+    "token":"BOT TOKEN",
+    "dbUrl":"mongodb://rotatinglight_mongo/rotating-light",
+    "prefix":"rl:"
+}

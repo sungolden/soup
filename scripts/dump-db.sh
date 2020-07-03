@@ -1,0 +1,1 @@
+docker exec rotatinglight_mongo sh -c 'mongodump --archive' > db.dump

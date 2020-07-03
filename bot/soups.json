@@ -1,0 +1,15 @@
+{
+    "soup":"728683897793020007",
+    "cooldown": 1,
+    "soups":{
+        "tomato":"🍅",
+        "broccoli":"🥦",
+        "carrot":"🥕",
+        "onion":"🧅",
+        "potato":"🥔",
+        "avocado":"🥑",
+        "bacon":"🥓",
+        "chicken noodle":"🍗🍜",
+        "cabbage":"🥬"
+    }
+}
