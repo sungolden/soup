@@ -14,8 +14,8 @@ module.exports = {
 	async execute(message, data) {
         try{
             const soupsJson = require('../../soups.json')
-            let user = await utils.getUserDoc(message.author.id)
             let soups = soupsJson.soups
+            let user = await utils.getUserDoc(message.author.id)
             let soupEmojiID = soupsJson.soup
             let cooldownTime = soupsJson.cooldown
             let soupEmoji = Client.emojis.resolve(soupEmojiID)
@@ -25,8 +25,7 @@ module.exports = {
             let diff = Math.ceil(Math.abs(cooldown-user.last_cooked)/(1000*60*60))
             if(user.last_cooked > cooldown) return message.channel.send(`🥵${soupEmoji.toString()}‼${toNum(diff)}⏳`)
 
-            let keys = Object.keys(soups);
-            let soup = keys[ keys.length * Math.random() << 0];
+            let soup = getSoup()
             
 
             user.last_cooked = Date.now()
@@ -57,4 +56,19 @@ function toNum(int){
         output = lookup[input.charAt(i)];
       }
     return output
+}
+
+function getSoup(){
+    const soupsJson = require('../../soups.json')
+    let soups = soupsJson.soups
+    let rare = soupsJson.rare
+    let keys = Object.keys(soups);
+    let soup = keys[ keys.length * Math.random() << 0];
+
+    if(rare[soup]){
+        if(Math.random() > rare[soup]){
+            return getSoup()
+        }
+    }
+    return soup
 }

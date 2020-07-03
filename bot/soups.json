@@ -12,6 +12,12 @@
         "chicken noodle":"🍗🍜",
         "cabbage":"🥬",
         "mushroom":"🍄",
-        "lobster":"🦞"
+        "lobster":"🦞",
+        "magic":"✨",
+        "icecream":"🍨"
+    },
+    "rare":{
+        "magic":0.1,
+        "icecream":0.2
     }
 }
