@@ -80,6 +80,9 @@ Client.on('ready', async () => {
     else if (message.content.startsWith(Client.user.toString())){
         msg = msg.substring(Client.user.toString().length)
     }
+    else if (message.content.endsWith(" soup")){
+        msg = msg.substring(0,message.content.length-" soup".length)
+    }
     else return
 
     msg = msg.trim()

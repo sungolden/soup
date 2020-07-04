@@ -3,7 +3,7 @@ const { Util } = require("discord.js");
 const utils = require('../../utils')
 module.exports = {
     name: 'get',
-    aliases: ['cook','collect','make','soup'],
+    aliases: ['cook','collect','make','soup',"gimme"],
     description: 'get | Makes a soup',
     catagory: "Misc",
     hidden: false,
