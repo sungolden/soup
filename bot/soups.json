@@ -14,10 +14,14 @@
         "mushroom":"🍄",
         "lobster":"🦞",
         "magic":"✨",
-        "icecream":"🍨"
+        "icecream":"🍨",
+        "lava":"🌋",
+        "beef":"🥩",
+        "rice":"🍚"
     },
     "rare":{
         "magic":0.1,
-        "icecream":0.2
+        "icecream":0.2,
+        "lava":0.15
     }
 }
