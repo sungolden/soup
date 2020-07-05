@@ -2,7 +2,7 @@ const utils = require("../../utils");
 
 module.exports = {
     name: 'eat',
-    aliases: ['nom'],
+    aliases: ['nom','slurp','slurmp'],
     description: 'eat | eats a random soup and resets wait time',
     catagory: "Soup",
     hidden: false,
