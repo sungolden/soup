@@ -71,16 +71,16 @@ Client.on('ready', async () => {
     if(message.author.bot) return;
 
     //Get args
-    let msg = message.content;
+    let msg = message.content.toLowerCase().replace(/[^\w\s]/g,"");
     //Check if starts with prefix or mention
-    if(message.content.startsWith(Client.config.prefix)){
+    if(msg.startsWith(Client.config.prefix)){
         //remove prefix from first argument
         msg = msg.substring(Client.config.prefix.length);
     }
-    else if (message.content.startsWith(Client.user.toString())){
+    else if (msg.startsWith(Client.user.toString())){
         msg = msg.substring(Client.user.toString().length)
     }
-    else if (message.content.endsWith(" soup")){
+    else if (msg.endsWith(" soup")){
         msg = msg.substring(0,message.content.length-" soup".length)
     }
     else return
