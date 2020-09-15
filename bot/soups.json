@@ -11,11 +11,14 @@
         "bacon":"🥓",
         "chicken noodle":"🍗🍜",
         "cabbage":"🥬",
+        "broth":"🦴"
         "mushroom":"🍄",
+        "strawberry":"🍓",
         "lobster":"🦞",
         "magic":"✨",
         "icecream":"🍨",
         "lava":"🌋",
+        "eye":"👁",
         "beef":"🥩",
         "rice":"🍚"
     },
@@ -23,5 +26,7 @@
         "magic":0.1,
         "icecream":0.2,
         "lava":0.15
+        "eye":0.2
+        "strawberry":0.15
     }
 }
