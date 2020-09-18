@@ -11,7 +11,7 @@
         "bacon":"🥓",
         "chicken noodle":"🍗🍜",
         "cabbage":"🥬",
-        "broth":"🦴"
+        "broth":"🦴",
         "mushroom":"🍄",
         "strawberry":"🍓",
         "lobster":"🦞",
@@ -25,8 +25,8 @@
     "rare":{
         "magic":0.1,
         "icecream":0.2,
-        "lava":0.15
-        "eye":0.2
+        "lava":0.15,
+        "eye":0.3,
         "strawberry":0.15
     }
 }
